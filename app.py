@@ -64,7 +64,7 @@ def show_question(qid):
         return redirect("/complete")
 
     if (len(responses) != qid):
-        # Trying to access questions out of order.
+        # Trying to access questions out of order.d
         flash(f"Invalid question id: {qid}.")
         return redirect(f"/questions/{len(responses)}")
 
